@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+
+    .left-part,
+    .right-part {
+        flex-basis: 50%;
+    }
+
+    .left-part {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2rem;
+        text-transform: capitalize;
+
+        .card {
+            width: 300px;
+            background-color: rgb(125, 208, 255);
+            border-radius: 1rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                width: 80px;
+                margin: 0 1rem;
+            }
+        }
+
+        .btn-group {
+            display: flex;
+            column-gap: 2rem;
+
+            button {
+                width: 150px;
+                height: 50px;
+                background-color: rgb(0, 162, 255);
+                border-radius: 10px;
+                margin-bottom: 2rem;
+                border: 0;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 800;
+            }
+        }
+    }
+
+    .right-part {
+        width: 50%;
+        text-align: center;
+        color: black;
+        position: fixed;
+        top: 100px;
+        right: 10px;
+
+        .pokeinto {
+            text-transform: capitalize;
+
+            img {
+                margin: 2rem;
+            }
+        }
+    }
+}
